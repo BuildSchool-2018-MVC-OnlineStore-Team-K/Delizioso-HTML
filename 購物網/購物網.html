@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-<title>主頁面</title>
+<title>Delizioso-購物</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
 
 <body>
-
   <!-- Side Navigation -->
   <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
 
@@ -36,7 +39,6 @@
     <button class="w3-bar-item w3-button" onclick="w3_close()">繼續購物
       <i class="fa fa-remove"></i>
     </button>
-
   </nav>
 
   <!-- Header -->
@@ -279,9 +281,7 @@
 
   <div class="w3-container w3-center">
     <hr>
-
     <h3>限時特惠</h3>
-
     <br>
 
     <div class="w3-col l3 s6">
@@ -419,6 +419,7 @@
       x.style.paddingTop = "10%";
       x.style.display = "block";
     }
+
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
     }
@@ -461,8 +462,12 @@
 
     function showDivs(n) {
       var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length };
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      };
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       }
@@ -476,6 +481,7 @@
       var elem = document.getElementById("myBar");
       var width = 5;
       var id = setInterval(frame, 10);
+
       function frame() {
         if (width == 100) {
           clearInterval(id);
