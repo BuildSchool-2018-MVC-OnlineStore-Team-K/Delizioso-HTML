@@ -1,31 +1,23 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <title>購物車</title>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
+<!DOCTYPE html>
+<html>
+<title>Delizioso-購物</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
 
 <body>
+    <!-- Side Navigation -->
     <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
         <div class="w3-bar-block w3-center">
             <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
             <h3 class="w3-wide">
-                <img src="https://upload.cc/i1/2018/05/17/ZAjghF.jpg" style="height:100px; width:300px;" class="img-fluid" alt="Responsive image">
+            <img src="https://upload.cc/i1/2018/05/17/ZAjghF.jpg" style="height:100px; width:300px;" class="img-fluid" alt="Responsive image">
             </h3>
         </div>
         <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
@@ -33,22 +25,16 @@
             <button class="w3-btn w3-xlarge " onclick="document.getElementById('註冊').style.display='block'" style="font-weight:900;">註冊</button>
 
             <div class="w3-button w3-block w3-white w3-left-align">
-                <a href="#" class="w3-bar-item w3-button">會員中心</a>
-                <a href="#" class="w3-bar-item w3-button">購物車</a>
-                <a href="#" class="w3-bar-item w3-button">購買紀錄</a>
-                <a href="#" class="w3-bar-item w3-button">訂單查詢</a>
-                <a href="#" class="w3-bar-item w3-button">客戶服務</a>
+                <a href="綜合板.html" class="w3-bar-item w3-button">首頁</a>
+                <a href="#" class="w3-bar-item w3-button">會員中心X</a>
+                <a href="購物車.html" class="w3-bar-item w3-button">購物車</a>
+                <a href="訂單明細與紀錄.html" class="w3-bar-item w3-button">訂單明細/紀錄</a>
+                <a href="#" class="w3-bar-item w3-button">客戶服務X</a>
             </div>
         </div>
-
-        <h3 href="#footer" class="w3-bar-item w3-button w3-padding">聯繫我們</h3>
-        <h3 href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">會員權益</h3>
-        <button class="w3-bar-item w3-button" onclick="w3_close()">
-            <h3>繼續購物
-                <i class="fa fa-remove"></i>
-            </h3>
-        </button>
     </nav>
+
+    <!--登入視窗-->
     <div id="登入" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-top">
             <header class="w3-container w3-theme-l1">
@@ -76,6 +62,8 @@
             </footer>
         </div>
     </div>
+
+    <!--註冊視窗-->
     <div id="註冊" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-top">
             <header class="w3-container w3-theme-l1">
@@ -122,8 +110,6 @@
     <!-- Header -->
     <header class="w3-container w3-theme w3-padding" id="myHeader">
         <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
-        <i class="fa fa-shopping-cart w3-margin-right"></i>
-        <i class="fa fa-search"></i>
         <h1 class="w3-xxxlarge w3-animate-bottom">
             <img src="https://upload.cc/i1/2018/05/17/ZAjghF.jpg" style="height:100px; width:300px;" class="img-fluid" alt="Responsive image">
         </h1>
@@ -148,7 +134,6 @@
             </footer>
         </div>
     </div>
-
     <br>
     <div class="container-fluid">
         <div class="row">
@@ -342,17 +327,9 @@
 
                     <p>ProductName- ShopNAme-XL-Red
                     </p>
-                   
-                        <p><h3> $19.99</h3>
-                        </p>
-                        <button class="w3-button w3-black" style="widows:150px"> 購買
-                            <i class="fa fa-shopping-cart"></i>
-                        </button>
-                </div>
-                <div class="col-3">
-                    <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="170" height="180">
-                    <p>ProductName- ShopNAme-XL-Red
-                    </p><p><h3> $19.99</h3>
+
+                    <p>
+                        <h3> $19.99</h3>
                     </p>
                     <button class="w3-button w3-black" style="widows:150px"> 購買
                         <i class="fa fa-shopping-cart"></i>
@@ -361,7 +338,20 @@
                 <div class="col-3">
                     <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="170" height="180">
                     <p>ProductName- ShopNAme-XL-Red
-                    </p><p><h3> $19.99</h3>
+                    </p>
+                    <p>
+                        <h3> $19.99</h3>
+                    </p>
+                    <button class="w3-button w3-black" style="widows:150px"> 購買
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="170" height="180">
+                    <p>ProductName- ShopNAme-XL-Red
+                    </p>
+                    <p>
+                        <h3> $19.99</h3>
                     </p>
                     <button class="w3-button w3-black" style="widows:150px"> 購買
                         <i class="fa fa-shopping-cart"></i>
@@ -371,7 +361,9 @@
                 <div class="col-3 ">
                     <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="170" height="180">
                     <p>ProductName- ShopNAme-XL-Red
-                    </p><p><h3> $19.99</h3>
+                    </p>
+                    <p>
+                        <h3> $19.99</h3>
                     </p>
                     <button class="w3-button w3-black" style="widows:150px"> 購買
                         <i class="fa fa-shopping-cart"></i>
@@ -385,7 +377,6 @@
     <br>
     </div>
     <div class="container-fluid">
-
         <div class="row">
             <div class="col-3">
             </div>
@@ -411,7 +402,6 @@
     </div>
     <br>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -420,6 +410,128 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
+            <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-theme">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-theme">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-theme">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-theme">5</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-theme">»</a>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+        <h3>DÉLICIEUX</h3>
+        <p>TEL:
+            <a href="" style="text-decoration:none;" target="_blank">0988-7766554</a>
+        </p>
+        <p> MAIL:
+            <a href="" style="text-decoration:none;" target="_blank">DÉLICIEUX@gmail.com</a>
+        </p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-theme-light w3-padding">Go To Top</span>
+            <a class="w3-text-white" href="#myHeader">
+                <span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i>
+                </span>
+            </a>
+        </div>
+        <p> 國家和地區| 新加坡| 印尼| 台灣| 泰國| 馬來西亞| 越南| 菲律賓
+        </p>
+    </footer>
+
+    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+    <script>
+        // Side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "100%";
+            x.style.fontSize = "40px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Tabs
+        function openCity(evt, cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            var activebtn = document.getElementsByClassName("testbtn");
+            for (i = 0; i < x.length; i++) {
+                activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " w3-dark-grey";
+        }
+
+        var mybtn = document.getElementsByClassName("testbtn")[0];
+        mybtn.click();
+
+        // Accordions
+        function myAccFunc(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // Slideshows
+        var slideIndex = 1;
+
+        function plusDivs(n) {
+            slideIndex = slideIndex + n;
+            showDivs(slideIndex);
+        }
+
+        function showDivs(n) {
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+        showDivs(1);
+
+        // Progress Bars
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 5;
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (width == 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+
 </body>
 
 </html>

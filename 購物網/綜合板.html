@@ -6,8 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
   crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 
@@ -26,9 +26,8 @@
 
       <div class="w3-button w3-block w3-white w3-left-align">
         <a href="#" class="w3-bar-item w3-button">會員中心</a>
-        <a href="#" class="w3-bar-item w3-button">購物車</a>
-        <a href="#" class="w3-bar-item w3-button">購買紀錄</a>
-        <a href="#" class="w3-bar-item w3-button">訂單查詢</a>
+        <a href="購物車.html" class="w3-bar-item w3-button">購物車</a>
+        <a href="訂單明細與紀錄.html" class="w3-bar-item w3-button">訂單明細/紀錄</a>
         <a href="#" class="w3-bar-item w3-button">客戶服務</a>
       </div>
     </div>
@@ -41,6 +40,8 @@
       </h3>
     </button>
   </nav>
+
+  <!--登入視窗-->
   <div id="登入" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
       <header class="w3-container w3-theme-l1">
@@ -68,6 +69,8 @@
       </footer>
     </div>
   </div>
+
+  <!--註冊視窗-->
   <div id="註冊" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
       <header class="w3-container w3-theme-l1">
@@ -114,8 +117,6 @@
   <!-- Header -->
   <header class="w3-container w3-theme w3-padding" id="myHeader">
     <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
-    <i class="fa fa-shopping-cart w3-margin-right"></i>
-    <i class="fa fa-search"></i>
     <h1 class="w3-xxxlarge w3-animate-bottom">
       <img src="https://upload.cc/i1/2018/05/17/ZAjghF.jpg" style="height:100px; width:300px;" class="img-fluid" alt="Responsive image">
     </h1>
@@ -215,22 +216,84 @@
         <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">Hot</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now
+          <button class="w3-button w3-black" onclick="document.getElementById('加入購物車').style.display='block'" style="font-weight:900;">加入購物車
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
       </div>
-      <p>Mega Ripped Jeans
+      <p>Mega Ripped Jeans-1
         <br>
         <b>$19.99</b>
       </p>
     </div>
+    <!--加入購物車-->
+    <div id="加入購物車" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-theme-l1">
+          <span onclick="document.getElementById('加入購物車').style.display='none'" class="w3-button w3-display-topright">×</span>
+          <h3>加入購物車</h3>
+        </header>
+        <div class="w3-padding">
+          <div class="w3-card w3-container" style="min-height:150px">
+            <br>
+            <div class="container">
+              <div class="row">
+                <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="150" height="180">
+                <div class="col-7">
+                  <h3>Mega Ripped Jeans </h3>
+                  <button class="shopee-button-outline">
+                    -
+                  </button>
+                  <input class="shopee-button-outline shopee-button-outline-mid" type="text" value="1" style="width: 130px">
+                  <button class="shopee-button-outline-mid">+
+                  </button>
+                </br>
+                </br>
+                  <label for="Size">Size:</label>
+                  <select id="Size" name="Size">
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                  </select>
+                  <label for="Color">Color:</label>
+                  <select id="Color" name="Color">
+                    <option value="Red">Red</option>
+                    <option value="Bule">Bule</option>
+                    <option value="Black">Black</option>
+                    <option value="Yellow">Yellow</option>
+                  </select>
+                </br>
+                  <h4><b>$19.99</b></h4>
+                </div>
+              </div>
+            </br>
+              <center>
+                <button class="w3-button w3-black" style="widows:150px"> 購買
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <span onclick="document.getElementById('加入購物車').style.display='none'" class="w3-button w3-black">繼續購物<i class="fa fa-shopping-cart"></i></span>
+              </center>
+            </div>
+            <BR>
+          </div>
+        </div>
+        <footer class="w3-container w3-theme-l1">
+          <p>祝您購物愉快
+            <i class="fa fa-smile-o"></i>
+          </p>
+        </footer>
+      </div>
+    </div>
+
+
     <div class="w3-container">
       <div class="w3-display-container">
         <img src="https://s9.postimg.cc/gs5c4ioq7/jeans2.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">Sale</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now
+          <button class="w3-button w3-black" onclick="document.getElementById('加入購物車').style.display='block'" style="font-weight:900;">加入購物車
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
@@ -248,7 +311,7 @@
         <img src="https://s9.postimg.cc/c697w2nqn/jeans1.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">Hot</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now
+          <button class="w3-button w3-black" onclick="document.getElementById('加入購物車').style.display='block'" style="font-weight:900;">加入購物車
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
@@ -258,12 +321,13 @@
         <b>$19.99</b>
       </p>
     </div>
+
     <div class="w3-container">
       <div class="w3-display-container">
         <img src="https://s9.postimg.cc/w0v9ikdcf/jeans3.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">Sale</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now
+          <button class="w3-button w3-black" onclick="document.getElementById('加入購物車').style.display='block'" style="font-weight:900;">加入購物車
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
@@ -281,7 +345,7 @@
         <img src="https://s9.postimg.cc/fd3rfy0jj/jeans2.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">New</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now
+          <button class="w3-button w3-black" onclick="document.getElementById('加入購物車').style.display='block'" style="font-weight:900;">加入購物車
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
@@ -291,12 +355,13 @@
         <b>$20.50</b>
       </p>
     </div>
+
     <div class="w3-container">
       <div class="w3-display-container">
         <img src="https://s9.postimg.cc/c697w2nqn/jeans1.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">Sale</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now
+          <button class="w3-button w3-black" onclick="document.getElementById('加入購物車').style.display='block'" style="font-weight:900;">加入購物車
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
@@ -314,7 +379,7 @@
         <img src="https://s9.postimg.cc/gs5c4ioq7/jeans2.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">New</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now
+          <button class="w3-button w3-black" onclick="document.getElementById('加入購物車').style.display='block'" style="font-weight:900;">加入購物車
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
@@ -324,12 +389,13 @@
         <b>$19.99</b>
       </p>
     </div>
+
     <div class="w3-container">
       <div class="w3-display-container">
         <img src="https://s9.postimg.cc/w0v9ikdcf/jeans3.jpg" style="width:100%">
         <span class="w3-tag w3-display-topleft">Sale</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now
+          <button class="w3-button w3-black" onclick="document.getElementById('加入購物車').style.display='block'" style="font-weight:900;">加入購物車
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
@@ -341,7 +407,6 @@
     </div>
   </div>
   <hr>
-
 
 
   <div class="w3-container w3-center">
