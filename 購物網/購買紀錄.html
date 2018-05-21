@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style type="text/css">
+        #QandA .Question {
+            /*標題的CSS定義*/
+            width: 100%;
+
+            border-bottom: 1px #aaa dotted;
+
+        }
+
+        #QandA .Answer {
+            /*內文的CSS定義*/
+            display: none;
+
+            width: 100%;
+
+            padding: 10px 0px;
+
+            background: #efefef;
+
+            border-bottom: 1px #aaa dotted;
+
+        }
+
+        #QandA:hover {
+            /*滑鼠移至區塊變色*/
+            background: #ebf6f7;
+
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                購買時間
+            </div>
+            <div class="col-2">
+                訂單編號
+            </div>
+            <div class="col-2">
+                付款方式
+            </div>
+            <div class="col-2">
+                處理進度
+            </div>
+            <div class="col-2">
+                出貨日期
+            </div>
+            <div class="col-2">
+                金額
+            </div>
+        </div>
+
+        <div id="QandA">
+            <p class="Question">
+                <div class="row">
+                    <div class="col-2">
+                        2018/12/14
+                    </div>
+                    <div class="col-2">
+                        000000000
+                    </div>
+                    <div class="col-2">
+                        超商取貨
+                    </div>
+                    <div class="col-2">
+                        已出貨
+                    </div>
+                    <div class="col-2">
+                        2018/12/18
+                    </div>
+                    <div class="col-2">
+                        NT$28.99
+                    </div>
+                </div>
+                <p class="Question">明細</p>
+                <div class="Answer">
+                    <div class="w3-third">
+                        <div class="w3-card w3-container" style="min-height:250px">
+                            <br>
+                            <div class="container">
+                                <div class="row">
+                                    <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="150" height="180">
+                                    <div class="col-7">
+                                        <br>
+                                        <p>ProductName- ShopNAme-XL-Red- $19.99
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container">
+                                <div class="row">
+                                    <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="150" height="180">
+                                    <div class="col-7">
+                                        <br>
+                                        <p>ProductName- ShopNAme-XL-Red- $19.99
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="QandA">
+            <p class="Question">
+                <div class="row">
+                    <div class="col-2">
+                        2018/12/14
+                    </div>
+                    <div class="col-2">
+                        000000000
+                    </div>
+                    <div class="col-2">
+                        超商取貨
+                    </div>
+                    <div class="col-2">
+                        已出貨
+                    </div>
+                    <div class="col-2">
+                        2018/12/18
+                    </div>
+                    <div class="col-2">
+                        NT$28.99
+                    </div>
+                </div>
+                <p class="Question">明細</p>
+                <div class="Answer">
+                    <div class="w3-third">
+                        <div class="w3-card w3-container" style="min-height:250px">
+                            <br>
+                            <div class="container">
+                                <div class="row">
+                                    <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="150" height="180">
+                                    <div class="col-7">
+                                        <br>
+                                        <p>ProductName- ShopNAme-XL-Red- $19.99
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container">
+                                <div class="row">
+                                    <img src="https://s9.postimg.cc/fd3rfy0jj/jeans3.jpg" width="150" height="180">
+                                    <div class="col-7">
+                                        <br>
+                                        <p>ProductName- ShopNAme-XL-Red- $19.99
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script type="text/javascript">
+
+        jQuery(function ($) {
+
+            $("p.Question").css({ cursor: "pointer" }).click(function () {
+
+                $(this).next().toggle("normal");
+
+            });
+
+        });
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
