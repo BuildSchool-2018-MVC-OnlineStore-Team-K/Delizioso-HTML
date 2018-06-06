@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0036)http://www.airspace.com.tw/MyCar.asp -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AIR SPACE-購物車</title>
+
+<meta name="KEYWORDS" content="AIR SPACE,國民服飾,MIT,女裝,女鞋,好感衣著,生活,甜美,清新,自然,舒適,流行,衣服,洋裝,包包,牛仔褲,男友褲,單寧,蕾絲,韓系,日系,多尺碼,全尺碼,抗UV,台灣品牌,大尺碼鞋,增高,針織,修飾褲,穿搭服裝,流行服飾,蕾絲上衣,居家服,LOOKBOOK,部落客穿搭文,百搭上衣,T恤,背心,小可愛,平價流行服飾,內搭褲,設計,免運,情人節,特價,特賣,尾牙洋裝,新品,顯瘦洋裝,公益合作">
+<meta name="DESCRIPTION" content="AIR SPACE 腳上的鞋和身上的衣是女孩的靈魂，穿上一雙好走的鞋、一件適合心情的衣服，不盲隨潮流，只穿屬於自己的時尚。平價時尚，也是一種美學，今日訂明日到，享受快速配達服務">
+<link rel="SHORTCUT ICON" type="image/x-icon" href="http://www.airspace.com.tw/favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64 128x128">
+<link rel="ICON" type="image/x-icon" href="http://www.airspace.com.tw/favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64 128x128">
+
+
+    <link href="./AIR SPACE-購物車_files/default.css" type="text/css" rel="stylesheet">
+    <link href="./AIR SPACE-購物車_files/main.css" type="text/css" rel="stylesheet">
+	<link href="./AIR SPACE-購物車_files/order.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" async="" src="http://ad.tagtoo.co/media/ad/track.js"></script><script async="" src="http://connect.facebook.net/en_US/fbevents.js"></script><script src="https://s.yimg.com/wi/ytc.js" async=""></script><script async="" src="http://www.google-analytics.com/analytics.js"></script><script async="" src="http://www.googletagmanager.com/gtm.js?id=GTM-M63P367&amp;l=wis_dataLayer"></script><script language="javascript">
+        
+        function cmdDel() {
+            document.form1.btn.value = "del";
+            if (confirm("這個動作會把加購商品資料全部刪除！\n\n請問確定刪除嗎？")) {
+                document.form1.submit();
+            }
+        }
+        function cmdUpd1() {
+            document.form1.btn.value = "upd1";
+            document.form1.submit();
+        }
+        function cmdUpd2() {
+            document.form1.btn.value = "upd2";
+            document.form1.submit();
+        }
+        function cmdWishList() {
+            document.form1.btn.value = "WishList";
+            document.form1.submit();
+        }
+        function cmdaddList(yano, pdno, selectpd) {
+            document.formPDList.yano.value = yano;
+            document.formPDList.pdno.value = pdno;
+            document.formPDList.selectpd.value = selectpd;
+            document.formPDList.submit();
+        }
+    </script>
+</head>
+<body cz-shortcut-listen="true">
+
+<link href="./AIR SPACE-購物車_files/default.css" type="text/css" rel="stylesheet">
+<link href="./AIR SPACE-購物車_files/main.css" type="text/css" rel="stylesheet">
+<link href="./AIR SPACE-購物車_files/colorbox.css" rel="stylesheet">
+<link href="./AIR SPACE-購物車_files/jquery.bxslider.css" type="text/css" rel="stylesheet">
+<link href="./AIR SPACE-購物車_files/jquery-ui.css" type="text/css" rel="stylesheet">
+<link href="./AIR SPACE-購物車_files/menu.css" rel="stylesheet">
+<script src="./AIR SPACE-購物車_files/jquery-1.11.2.min.js.下載"></script>
+<script type="text/javascript" src="./AIR SPACE-購物車_files/jquery-ui.min.js.下載"></script>
+<script type="text/javascript" src="./AIR SPACE-購物車_files/jquery.bxslider.min.js.下載"></script>
+<link href="./AIR SPACE-購物車_files/jquery.cycle2.css" rel="stylesheet">
+<script type="text/javascript" src="./AIR SPACE-購物車_files/jquery.cycle2.min.js.下載"></script>
+<script src="./AIR SPACE-購物車_files/jquery.colorbox.min.js.下載"></script>
+<script src="./AIR SPACE-購物車_files/polyfiller.min.js.下載"></script>
+<script src="./AIR SPACE-購物車_files/jquery.placeholder.min.js.下載"></script>
+<script type="text/javascript">
+    $(function () {
+        webshim.polyfill('es5 mediaelement forms');
+
+        $('input, textarea').placeholder({ customClass: 'my-placeholder' });
+        var isProc = false;
+
+        $("#logoimg").load(function() 
+        { 
+            isProc = true;
+        });
+        if (isProc == false)
+        {
+            $('#main_index').css("margin-top", $('#headerBlock').outerHeight() + 12);
+            $('#main').css("margin-top", $('#headerBlock').outerHeight() + 12);
+        }
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                $('#logoimg_s').show();$('#logoimg_b').hide();
+            }
+            else {
+                $('#logoimg_b').show();$('#logoimg_s').hide();
+                $('#main_index').css("margin-top", $('#headerBlock').outerHeight() + 12);
+                $('#main').css("margin-top", $('#headerBlock').outerHeight() + 12);
+            }
+        })
+
+        if ($(this).scrollTop() > 0) {
+            $('#logoimg_s').show();$('#logoimg_b').hide();
+        }
+        else {
+            $('#logoimg_b').show();$('#logoimg_s').hide();
+            $('#main_index').css("margin-top", $('#headerBlock').outerHeight() + 12);
+            $('#main').css("margin-top", $('#headerBlock').outerHeight() + 12);
+        }
+
+        //$(".cbLoginJoin").colorbox({ width: "630px", height: "420px", scrolling: false });
+        $(".cbEpaper").colorbox({ width: "400px", height: "200px", scrolling: false });
+    });
+
+
+    $(function () {
+        loadfloatcart();
+        //關鍵字查詢
+        $("#frmSearch").submit(function () {
+            var q = $.trim($("#tbxKeyword").val());
+            if (q.length == 0) {
+                alert('請輸入商品名稱或編號!');
+            } else {
+                location.href = "PDList.asp?Keyword=" + encodeURIComponent(q);
+            }
+            return false;
+        });
+        
+        $("#tbxKeyword").keyup(function (event) {
+            if (event.keyCode == 13) {
+                $("#frmSearch").submit();
+            }
+        }); 
+
+
+        $('.main-menu > li').mouseenter(function () {
+            $(this).children(".sub-menu").css("display", "block");
+        })
+        $('.main-menu > li').mouseleave(function () { $(this).children(".sub-menu").css("display", "none"); })
+    });
+    function mouseover(x){
+        var $this = $(x);
+        $this.append( $this.html($this.attr('data-over')) );
+    }
+    
+    function mouseout(x){
+        var $this = $(x);
+        $this.append( $this.html($this.attr('data-out')) );
+    }
+
+    function loadfloatcart() {
+        $.ajax({
+            type: 'post',
+            url: "function/GetFloatCartInfo.asp",
+            data:"",
+            dataType: "text",
+            async: true,
+            success: function (data) {
+                //alert(data);
+                $('.mini-bag-wrapper').html(data);
+                //$('.float-script').html(data);
+            },
+            error: function (xhr, ajaxOptions, thrownError) { alert("getloadfloatcart error:" + xhr.responseText); }
+        })
+    }
+</script>
+<div id="headerBlock">
+    <div id="header">
+        <div id="tool">
+            <table align="right">
+                <tbody><tr>
+                    <td><a class="cbLoginJoin cboxElement" href="http://www.airspace.com.tw/LoginJoin.asp"><span onmouseover="mouseover(this)" onmouseout="mouseout(this)" data-over="會員登入" data-out="LOGIN">LOGIN</span></a></td>
+                    <td style="width:0px">/</td>
+                    <td><a href="http://www.airspace.com.tw/LoginJoin.asp" class="cbLoginJoin cboxElement"><span onmouseover="mouseover(this)" onmouseout="mouseout(this)" data-over="會員中心" data-out="MEMBERS">MEMBERS</span></a></td>
+                    <td style="width:0px">/</td>
+                    <td><a class="wishlist-link" href="http://www.airspace.com.tw/MyList.asp"><span onmouseover="mouseover(this)" onmouseout="mouseout(this)" data-over="願望清單" data-out="WISH LIST">WISH LIST</span></a></td>
+                    <td style="width:0px">/</td>
+                    <td>
+                        <div style="position:relative;">
+                            <a class="mycart-link" href="http://www.airspace.com.tw/MyCar.asp" style="text-align:left;"><span onmouseover="mouseover(this)" onmouseout="mouseout(this)" data-over="購物車" data-out="BAG" style="background:url(images/bag.png) no-repeat 90% 100%;width:60px;display:inline-block;line-height:17px;">BAG</span></a>
+                            <div class="mini-bag-wrapper" style="display: none;"><div id="cartfloat-prev"><a class="bx-prev" href="http://www.airspace.com.tw/MyCar.asp">Prev</a></div><div class="bx-wrapper" style="max-width: 242px; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 114px;"><div class="cartslider" style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -100px, 0px);"><a href="http://www.airspace.com.tw/PDContent.asp?pp1=10&amp;pp2=04&amp;pp3=04&amp;yano=18015005&amp;yacolor=01" style="float: none; list-style: none; position: relative; width: 98px;" class="bx-clone"><div class="cartslider-img"><img width="70px" height="90px" src="./AIR SPACE-購物車_files/18015005-01-01.jpg" onerror="src=&#39;images/noimage.png&#39;"></div><div class="cartslider-info"><p class="pdname">簡約網紗無痕三角內褲</p><p>黑</p><p>99</p><p>QTY&nbsp;1</p></div></a><a href="http://www.airspace.com.tw/PDContent.asp?pp1=02&amp;pp2=08&amp;pp3=01&amp;yano=1821187&amp;yacolor=02" style="float: none; list-style: none; position: relative; width: 98px;"><div class="cartslider-img"><img width="70px" height="90px" src="./AIR SPACE-購物車_files/1821187-02-01.jpg" onerror="src=&#39;images/noimage.png&#39;"></div><div class="cartslider-info"><p class="pdname">睫毛蕾絲美背背心上衣</p><p>白</p><p>390</p><p>QTY&nbsp;1</p></div></a><a href="http://www.airspace.com.tw/PDContent.asp?pp1=10&amp;pp2=04&amp;pp3=04&amp;yano=18015005&amp;yacolor=01" style="float: none; list-style: none; position: relative; width: 98px;"><div class="cartslider-img"><img width="70px" height="90px" src="./AIR SPACE-購物車_files/18015005-01-01.jpg" onerror="src=&#39;images/noimage.png&#39;"></div><div class="cartslider-info"><p class="pdname">簡約網紗無痕三角內褲</p><p>黑</p><p>99</p><p>QTY&nbsp;1</p></div></a><a href="http://www.airspace.com.tw/PDContent.asp?pp1=02&amp;pp2=08&amp;pp3=01&amp;yano=1821187&amp;yacolor=02" style="float: none; list-style: none; position: relative; width: 98px;" class="bx-clone"><div class="cartslider-img"><img width="70px" height="90px" src="./AIR SPACE-購物車_files/1821187-02-01.jpg" onerror="src=&#39;images/noimage.png&#39;"></div><div class="cartslider-info"><p class="pdname">睫毛蕾絲美背背心上衣</p><p>白</p><p>390</p><p>QTY&nbsp;1</p></div></a></div></div><div class="bx-controls"></div></div><div id="cartfloat-next"><a class="bx-next" href="http://www.airspace.com.tw/MyCar.asp">Next</a></div><div style="margin:5px;padding:5px;font-weight:bold;color:#545050">Total NT$&nbsp;489</div><div><a href="http://www.airspace.com.tw/MyCar.asp"><img src="./AIR SPACE-購物車_files/checkout.png"></a></div>
+<script type="text/javascript">
+    $(function () {
+        $('.cartCount').html('2');
+        //$('.cartslider').html('<div id='cartfloat-prev'></div><div class='cartslider'><a href=PDContent.asp?pp1=02&pp2=08&pp3=01&yano=1821187&yacolor=02><div class="cartslider-img"><img width="70px" height="90px" src="http://photo.airspace.com.tw/photo/1821187/1821187-02-01.jpg" onerror="src='images/noimage.png'" /></div><div class="cartslider-info"><p class="pdname">睫毛蕾絲美背背心上衣</p><p>白</p><p>390</p><p>QTY&nbsp;1</p></div></a><a href=PDContent.asp?pp1=10&pp2=04&pp3=04&yano=18015005&yacolor=01><div class="cartslider-img"><img width="70px" height="90px" src="http://photo.airspace.com.tw/photo/18015005/18015005-01-01.jpg" onerror="src='images/noimage.png'" /></div><div class="cartslider-info"><p class="pdname">簡約網紗無痕三角內褲</p><p>黑</p><p>99</p><p>QTY&nbsp;1</p></div></a></div><div id='cartfloat-next'></div><div style ='margin:5px;padding:5px;font-weight:bold;color:#545050'>Total NT$&nbsp;489</div><div><a href = 'MyCar.asp'><img src='images/checkout.png' /></a></div>');
+
+        //浮動購物車商品slider
+        cartSlider = $('.cartslider').bxSlider({
+            slideWidth: 242,
+            minSlides: 1,
+            maxSlides: 1,
+            pager: false,
+            nextSelector: '#cartfloat-next',
+            prevSelector: '#cartfloat-prev',
+            mode: 'vertical',
+            controls: true,
+            adaptiveHeight: false,
+            onSliderLoad: function($slideElement, oldIndex, newIndex) {
+                //浮動購物車控制
+                $(".mycart-link").mouseenter(function(){
+                    $(this).data("hover", true);
+                    if ($('.cartCount').html() != '0') {
+                        $(".mini-bag-wrapper").slideDown('normal');
+                        cartSlider.reloadSlider();
+                    }
+                })
+                .mouseleave(function(){
+                    $(this).data("hover", false);
+                    setTimeout(function(){
+                        var cartHovered = $(".mini-bag-wrapper").data("hover");
+                        if (!cartHovered){
+                    
+                            $(".mini-bag-wrapper").slideUp('normal')
+                        }
+                    },50);
+                });
+
+                $(".mini-bag-wrapper").mouseenter(function(){
+                    $(this).data("hover", true);
+                })
+                .mouseleave(function(){
+                    $(this).data("hover", false);
+                    setTimeout(function(){
+                        var linkHovered = $(".mycart-link").data("hover");
+                        if (!linkHovered){
+                    
+                            $(".mini-bag-wrapper").slideUp('normal')
+                        }
+                    },50);
+                });
+            }
+        });
+
+        
+    });
+
+</script>
+</div>
+                        </div>
+                        <div class="float-script"></div>
+                    </td>
+                    <td>
+                        [&nbsp;<span style="" class="cartCount">2</span>&nbsp;]
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <table id="logo">
+        <tbody><tr><td><a href="http://www.airspace.com.tw/index.asp"><div><img id="logoimg_b" src="./AIR SPACE-購物車_files/logo_w.png" style="display: none;"><img id="logoimg_s" src="./AIR SPACE-購物車_files/logo_w_s.png" style="display: inline;"></div></a></td></tr>
+    </tbody></table>
+    <div id="menu-area">
+        <div id="menu">
+            <ul class="main-menu">
+                <li>
+                    <a class="menulist" href="http://www.airspace.com.tw/PDList.asp?newpd=week&amp;ob=E" data-over="新品上市" data-out="NEW IN" onmouseover="mouseover(this)" onmouseout="mouseout(this)">NEW IN</a>
+                    <ul class="sub-menu" style="display: none;"><li><a href="http://www.airspace.com.tw/PDList.asp?newpd=week&amp;ob=E"><span class="item-title">本週新品</span></a><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;newpd=week&amp;ob=E">服飾</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;newpd=week&amp;ob=E">鞋款</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;newpd=week&amp;ob=E">
+韓國飾品</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;newpd=week&amp;ob=E">內衣褲</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;newpd=week&amp;ob=E">A+ 中大尺碼</a></li></ul></li><li> <span class="item-title">熱銷推薦</span> <ul>     <li><a href="http://www.airspace.com.tw/PDList.asp?newpd=hotsale">全館暢銷商品</a></li>     <li><a href="http://www.airspace.com.tw/PDList.asp?pp1=09&amp;pp2=01&amp;pp3=12" data-item="090112" data-item1="09" class="item-link">CHIAO聯名設計系列</a></li>     <li><a href="http://www.airspace.com.tw/PDList.asp?pp1=09&amp;pp2=01&amp;pp3=04" data-item="090104" data-item1="09" class="item-link">ESTHERLOVESYOU聯名系列</a></li>     <li><a href="http://www.airspace.com.tw/PDList.asp?pp1=09&amp;pp2=01&amp;pp3=07" data-item="090107" data-item1="09" class="item-link">浪漫蕾絲</a></li>     <li><a href="http://www.airspace.com.tw/PDList.asp?pp1=09&amp;pp2=01&amp;pp3=08" data-item="090108" data-item1="09" class="item-link">印花波西</a></li>     <li><a href="http://www.airspace.com.tw/PDList.asp?pp1=09&amp;pp2=01&amp;pp3=09" data-item="090109" data-item1="09" class="item-link">性感女神</a></li> </ul></li><li><ul> <span class="item-title">&nbsp;</span>     <li><a href="http://www.airspace.com.tw/PDList.asp?pp1=09&amp;pp2=01&amp;pp3=11" data-item="090111" data-item1="09" class="item-link">率性簡約</a></li>     <li><a href="http://www.airspace.com.tw/PDList.asp?pp1=09&amp;pp2=01&amp;pp3=13" data-item="090113" data-item1="09" class="item-link">夏日美背</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=all">全館商品</a></li></ul></li><li class="sub-menu-img"><img src="./AIR SPACE-購物車_files/MenuBanner09.jpg" alt="" class="brand-img"></li></ul>
+                </li>
+                <li>
+                    <a class="menulist" href="http://www.airspace.com.tw/PDList.asp?pp1=02" data-over="服飾" data-out="CLOTHING" onmouseover="mouseover(this)" onmouseout="mouseout(this)">CLOTHING</a>
+                    <ul class="sub-menu" style="display: none;"><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=09">貼身內著</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=09&amp;pp3=01" data-item="0209" data-item1="02" class="item-link">內著</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=01">上身</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=01&amp;pp3=01" data-item="0201" data-item1="02" class="item-link">背心</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=01&amp;pp3=02" data-item="0201" data-item1="02" class="item-link">上衣</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=01&amp;pp3=03" data-item="0201" data-item1="02" class="item-link">襯衫</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=01&amp;pp3=07" data-item="0201" data-item1="02" class="item-link">針織/毛衣</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=02">下著</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=02&amp;pp3=01" data-item="0202" data-item1="02" class="item-link">裙類</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=02&amp;pp3=02" data-item="0202" data-item1="02" class="item-link">褲類</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=03">洋裝/連身褲</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=03&amp;pp3=03" data-item="0203" data-item1="02" class="item-link">無袖洋裝</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=03&amp;pp3=04" data-item="0203" data-item1="02" class="item-link">短袖/五分袖洋裝</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=03&amp;pp3=05" data-item="0203" data-item1="02" class="item-link">長袖/七分袖洋裝</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=03&amp;pp3=02" data-item="0203" data-item1="02" class="item-link">連身褲/套裝</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=07">比基尼</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=07&amp;pp3=01" data-item="0207" data-item1="02" class="item-link">比基尼</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=08">外套/罩衫</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=02&amp;pp2=08&amp;pp3=01" data-item="0208" data-item1="02" class="item-link">外套/罩衫</a></li></ul></li><li class="sub-menu-img"><img src="./AIR SPACE-購物車_files/MenuBanner02.jpg" alt="" class="brand-img"></li></ul>
+                </li>
+                <li>
+                    <a class="menulist" href="http://www.airspace.com.tw/PDList.asp?pp1=10" data-over="內衣褲" data-out="LINGERIES" onmouseover="mouseover(this)" onmouseout="mouseout(this)">LINGERIES</a>
+                    <ul class="sub-menu"><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=01">內褲</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=01&amp;pp3=01" data-item="1001" data-item1="10" class="item-link">三角內褲</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=01&amp;pp3=02" data-item="1001" data-item1="10" class="item-link">平口內褲</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=01&amp;pp3=03" data-item="1001" data-item1="10" class="item-link">微丁字褲</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=02">內衣</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=02&amp;pp3=02" data-item="1002" data-item1="10" class="item-link">無鋼圈胸罩</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=02&amp;pp3=03" data-item="1002" data-item1="10" class="item-link">成套內衣</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=03">睡衣</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=03&amp;pp3=01" data-item="1003" data-item1="10" class="item-link">睡衣</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=04">SALE</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=04&amp;pp3=01" data-item="1004" data-item1="10" class="item-link">SALE ‧ $99</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=04&amp;pp3=03" data-item="1004" data-item1="10" class="item-link">SALE ‧ $149</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=10&amp;pp2=04&amp;pp3=04" data-item="1004" data-item1="10" class="item-link">SALE ‧ $179</a></li></ul></li><li class="sub-menu-img"><img src="./AIR SPACE-購物車_files/MenuBanner10.jpg" alt="" class="brand-img"></li></ul>
+                </li>
+                <li>
+                    <a class="menulist" href="http://www.airspace.com.tw/PDList.asp?pp1=05" data-over="女鞋" data-out="SHOES" onmouseover="mouseover(this)" onmouseout="mouseout(this)">SHOES</a>
+                    <ul class="sub-menu" style="display: none;"><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=01">跟鞋</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=01&amp;pp3=01" data-item="0501" data-item1="05" class="item-link">細跟鞋</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=01&amp;pp3=02" data-item="0501" data-item1="05" class="item-link">粗跟鞋</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=01&amp;pp3=03" data-item="0501" data-item1="05" class="item-link">中低跟鞋</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=01&amp;pp3=04" data-item="0501" data-item1="05" class="item-link">高跟鞋</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=02">涼鞋</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=02&amp;pp3=04" data-item="0502" data-item1="05" class="item-link">平底涼鞋</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=02&amp;pp3=05" data-item="0502" data-item1="05" class="item-link">低跟涼鞋</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=02&amp;pp3=01" data-item="0502" data-item1="05" class="item-link">高跟涼鞋</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=09">平底鞋</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=09&amp;pp3=01" data-item="0509" data-item1="05" class="item-link">涼拖鞋</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=09&amp;pp3=02" data-item="0509" data-item1="05" class="item-link">平底鞋</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=09&amp;pp3=03" data-item="0509" data-item1="05" class="item-link">厚底鞋</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=03">靴子</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=03&amp;pp3=03" data-item="0503" data-item1="05" class="item-link">短、踝靴</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=07">包包</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=07&amp;pp3=01" data-item="0507" data-item1="05" class="item-link">手拿包</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=07&amp;pp3=02" data-item="0507" data-item1="05" class="item-link">肩背包</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=08">SALE</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=08&amp;pp3=02" data-item="0508" data-item1="05" class="item-link">SALE‧65折</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=05&amp;pp2=08&amp;pp3=01" data-item="0508" data-item1="05" class="item-link">SALE‧49折</a></li></ul></li><li class="sub-menu-img"><img src="./AIR SPACE-購物車_files/MenuBanner05.jpg" alt="" class="brand-img"></li></ul>
+                </li>
+                <li>
+                    <a class="menulist" href="http://www.airspace.com.tw/PDList.asp?pp1=04" data-over="韓國飾品" data-out="ACCESSORY" onmouseover="mouseover(this)" onmouseout="mouseout(this)">ACCESSORY</a>
+                    <ul class="sub-menu" style="display: none;"><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=01">耳環</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=01&amp;pp3=01" data-item="0401" data-item1="04" class="item-link">韓國耳環</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=05">耳夾</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=05&amp;pp3=01" data-item="0405" data-item1="04" class="item-link">韓國耳夾</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=06">項鍊</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=06&amp;pp3=01" data-item="0406" data-item1="04" class="item-link">頸鍊</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=06&amp;pp3=02" data-item="0406" data-item1="04" class="item-link">鎖骨鍊</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=06&amp;pp3=03" data-item="0406" data-item1="04" class="item-link">長鍊</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=07">手環/戒指</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=07&amp;pp3=01" data-item="0407" data-item1="04" class="item-link">手環/手鍊</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=07&amp;pp3=02" data-item="0407" data-item1="04" class="item-link">戒指</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=02">配件</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=02&amp;pp3=02" data-item="0402" data-item1="04" class="item-link">髮飾</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=02&amp;pp3=03" data-item="0402" data-item1="04" class="item-link">領巾</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=02&amp;pp3=04" data-item="0402" data-item1="04" class="item-link">腰帶</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=04">SALE</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=04&amp;pp2=04&amp;pp3=05" data-item="0404" data-item1="04" class="item-link">SALE‧49折</a></li></ul></li><li class="sub-menu-img"><img src="./AIR SPACE-購物車_files/MenuBanner04.jpg" alt="" class="brand-img"></li></ul>
+                </li>
+                <li>
+                    <a class="menulist" href="http://www.airspace.com.tw/PDList.asp?pp1=08" data-over="中大尺碼" data-out="PLUS SIZE" onmouseover="mouseover(this)" onmouseout="mouseout(this)">PLUS SIZE</a>
+                    <ul class="sub-menu" style="display: none;"><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=01">上身</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=01&amp;pp3=06" data-item="0801" data-item1="08" class="item-link">內著</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=01&amp;pp3=01" data-item="0801" data-item1="08" class="item-link">背心</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=01&amp;pp3=02" data-item="0801" data-item1="08" class="item-link">上衣</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=01&amp;pp3=03" data-item="0801" data-item1="08" class="item-link">襯衫</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=01&amp;pp3=05" data-item="0801" data-item1="08" class="item-link">外套</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=02">下著</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=02&amp;pp3=01" data-item="0802" data-item1="08" class="item-link">裙類</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=02&amp;pp3=02" data-item="0802" data-item1="08" class="item-link">短褲</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=02&amp;pp3=03" data-item="0802" data-item1="08" class="item-link">長褲</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=03">洋裝/套裝</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=03&amp;pp3=02" data-item="0803" data-item1="08" class="item-link">褲套裝</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=03&amp;pp3=03" data-item="0803" data-item1="08" class="item-link">無袖洋裝</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=03&amp;pp3=04" data-item="0803" data-item1="08" class="item-link">短袖/五分袖洋裝</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=03&amp;pp3=05" data-item="0803" data-item1="08" class="item-link">長袖/七分袖洋裝</a></li></ul></li><li><span class="item-title"><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=04">SALE</a></span><ul><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=04&amp;pp3=01" data-item="0804" data-item1="08" class="item-link">SALE ‧ 65折</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=04&amp;pp3=03" data-item="0804" data-item1="08" class="item-link">SALE ‧ 49折</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=04&amp;pp3=04" data-item="0804" data-item1="08" class="item-link">顯瘦穿搭‧ 二件$698</a></li><li><a href="http://www.airspace.com.tw/PDList.asp?pp1=08&amp;pp2=04&amp;pp3=05" data-item="0804" data-item1="08" class="item-link">曲線針織‧ 二件$598</a></li></ul></li><li class="sub-menu-img"><img src="./AIR SPACE-購物車_files/MenuBanner08.jpg" alt="" class="brand-img"></li></ul>
+                </li>
+                <li>
+                    <a class="menulist" href="http://www.airspace.com.tw/PDSale.asp" data-over="限時優惠" data-out="SALE" onmouseover="mouseover(this)" onmouseout="mouseout(this)" style="color:red;">SALE</a>
+                    <ul class="sub-menu" style="display: none;"><li><span class="item-title"><a href="http://www.airspace.com.tw/PDSale.asp">優惠活動</a></span><ul><li style="margin-right:15px;"><a href="http://www.airspace.com.tw/PDSale.asp?saleya=1811231">顯瘦穿搭 ‧ 二件$698</a></li><li style="margin-right:15px;"><a href="http://www.airspace.com.tw/PDSale.asp?saleya=17412123">曲線針織 ‧ 二件$598</a></li><li style="margin-right:15px;"><a href="http://www.airspace.com.tw/PDSale.asp?saleya=1621255">春日穿搭 ‧ 二件$498</a></li><li style="margin-right:15px;"><a href="http://www.airspace.com.tw/PDSale.asp?saleya=1621173">百搭衣著 ‧ 二件$368</a></li><li style="margin-right:15px;"><a href="http://www.airspace.com.tw/PDSale.asp?saleya=1625009">貼身內著 ‧ 二件$268</a></li><li style="margin-right:15px;"><a href="http://www.airspace.com.tw/PDList.asp?pp1=&amp;saleitem=20180604_PUREOPEN99">歡慶開館 ‧ 任選$99起</a></li></ul></li><li style="margin-top:16px;margin-right:15px"><ul><li style="margin-right:15px;"><a href="http://www.airspace.com.tw/PDList.asp?pp1=&amp;saleitem=20180305_winsale49">最終折扣 ‧ 任選49折</a></li><li style="margin-right:15px;"><a href="http://www.airspace.com.tw/PDList.asp?pp1=&amp;saleitem=20180409_springsale65">春季女神 ‧ 任選65折</a></li></ul></li><li class="sub-menu-img"><img src="./AIR SPACE-購物車_files/MenuBannerSale.jpg" alt="" class="brand-img"></li></ul>
+                </li>
+            </ul>
+        </div>
+        <div id="search">
+            <form action="http://www.airspace.com.tw/MyCar.asp" method="get" id="frmSearch" name="frmSearch">
+                <input id="tbxKeyword" type="text" placeholder="SEARCH">
+            </form>          
+        </div>
+    </div>
+</div>
+
+
+
+    
+<script type="text/javascript">
+    $(function () {
+        $('.contact').mouseenter(function () {
+            $('.contact-area').delay(10).fadeIn(500);
+        });
+
+        $('.contact').mouseleave(function () {
+            $('.contact-area').delay(10).hide();
+        });
+
+        $(".cbLoginJoin").colorbox({ width: "630px", height: "420px", scrolling: false });
+    });
+</script>
+
+<div class="clear"></div> 
+<div id="footer">
+    <div class="footer-content">
+        <div class="footer-link">
+            <p class="footer_title">NEWSLETTER /</p>
+            <form name="epaper" id="form-epaper" onsubmit="return false">
+            <table class="footer-table" border="0" style="padding-bottom:10px;margin-top:-10px;">
+                <tbody><tr>
+                    <td>
+			            <div id="epaper-form">
+                            <input id="email" type="email" name="email" placeholder="電子郵件 E-mail" maxlength="40" style="width:200px;height:20px;" required="">
+                            <input type="hidden" name="btn" value="epaper">
+                            <input type="submit" value="" id="submit-epaper" style="background:url(images/btn-ok.jpg);border: 0;height: 23px;width: 37px;vertical-align:middle;">
+			            </div>
+                    </td>
+                    <td><a href="https://www.youtube.com/channel/UCxsKYEHhLkUf8fPSXqo-qBQ" target="_blank"><img src="./AIR SPACE-購物車_files/video.png"></a></td>
+                    <td><a href="http://www.airspace.com.tw/Store.asp"><img src="./AIR SPACE-購物車_files/location.png"></a></td>
+                    <td><a href="https://instagram.com/AIRSPACETAIWAN" target="_blank"><img src="./AIR SPACE-購物車_files/camera.png"></a></td>
+                    <td><a href="http://www.facebook.com.tw/AIRSPACE.tw" target="_blank"><img src="./AIR SPACE-購物車_files/fb.png"></a></td>
+                    <td width="70">&nbsp;</td>
+                </tr>
+            </tbody></table>
+            </form>
+            <script language="javascript">
+                $(document).ready(function () {
+                    $("#submit-epaper").click(function () {
+                        if ($("#form-epaper").callProp('checkValidity')) {
+                            $.post("epaper_check.asp", $("#form-epaper").serialize(),
+                            function (data, status) {
+                                if (status == "success") {
+                                    var arrData = data.split("|");
+                                    for (i = 0; i < arrData.length; i++) {
+                                        if (arrData[i] != "") {
+                                            switch (i) {
+                                                case 0:
+                                                    alert(arrData[i]);
+                                                    break;
+                                                case 1:
+                                                    location.href = arrData[i];
+                                                    break;
+                                                default:
+                                                    alert(arrData[i]);
+                                                    break;
+                                            }
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    });
+                });
+            </script>
+            <div>10:00~12:00  13:00~19:00 / Mon - Fri (例假日除外)</div>
+            <div>台灣客服專線  + 886-2-2880-7708</div>
+            <div>香港免付費專線  800-931-420｜澳門免付費專線  853-6262-1662</div>
+            <div>(限普通話客服)</div>
+            <div><a href="mailto:service@airspace.com.tw">service@airspace.com.tw</a></div>
+            <div>OVERSEAS WEBSITE  <a href="https://www.airspace.net.my/"><img src="./AIR SPACE-購物車_files/my.png" style="vertical-align : middle;padding:3px;"></a><a href="https://airspace.com.vn/"><img src="./AIR SPACE-購物車_files/vn.png" style="vertical-align : middle;padding:3px;"></a></div>
+        </div>
+        <div class="footer-link">
+            <p class="footer_title">CUSTOMER CARE</p>
+            <div><a href="http://www.airspace.com.tw/QA.asp"><span class="chtxt">會員常見問題</span></a></div>
+            <div><a href="http://www.airspace.com.tw/OnlineMember.asp"><span class="chtxt">線上帳戶</span></a></div>
+            <div><a href="http://www.airspace.com.tw/VIP.asp"><span class="chtxt">VIP優惠資格</span></a></div>
+            <div><a href="mailto:service@airspace.com.tw"><span class="chtxt">聯絡我們</span></a></div>
+            <div><a href="http://www.airspace.com.tw/Activate.asp"><span class="chtxt">門市會員通知</span></a></div>
+        </div>
+        <div class="footer-link">
+            <p class="footer_title">ORDER &amp; SHIPPING</p>
+            <div><a href="http://www.airspace.com.tw/Order.asp"><span class="chtxt">購物流程</span></a></div>
+            <div><a href="http://www.airspace.com.tw/Shipping.asp"><span class="chtxt">付款與配送方式</span></a></div>
+            <div><a href="http://www.airspace.com.tw/Service.asp"><span class="chtxt">售後服務</span></a></div>
+            <div><a href="http://www.airspace.com.tw/Foreign.asp"><span class="chtxt">國外買家服務</span></a></div>
+        </div>
+        <div class="footer-link">
+            <p class="footer_title">Precautions</p>
+            <div><a href="http://www.airspace.com.tw/News.asp?P=N"><span class="chtxt">最新消息</span></a></div>
+            <div><a href="http://www.airspace.com.tw/Disclaimer.asp"><span class="chtxt">免責聲明</span></a></div>
+            <div><a href="http://www.airspace.com.tw/Privacy.asp"><span class="chtxt">隱私權保護</span></a></div>
+            <div><a href="http://www.airspace.com.tw/TermsOfUse.asp"><span class="chtxt">網站使用條款</span></a></div>
+            <div><a href="http://www.airspace.com.tw/scam.asp"><span class="chtxt">防詐騙聲明</span></a></div>
+        </div>
+        <div class="footer-link">
+            <p class="footer_title">ABOUT US</p>
+            <div><a href="http://www.airspace.com.tw/Brand.asp"><span class="chtxt">公司簡介</span></a></div>
+            <div><a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&amp;j=3d4b436c35373f6831333b64393f371a72a2a2a25415d592674j00&amp;jobsource=checkc" target="_blank"><span class="chtxt">人才招募</span></a></div>
+            <div><a href="http://www.airspace.com.tw/Business.asp"><span class="chtxt">廠商合作</span></a></div>
+            <div><a href="http://www.airspace.com.tw/Store.asp"><span class="chtxt">門市資訊</span></a></div>
+            <div><a href="http://www.airspace.com.tw/m/"><span class="chtxt">行動版</span></a></div>
+        </div>
+    </div>
+</div>
+<!-- Google Tag Manager -->
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M63P367"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','wis_dataLayer','GTM-M63P367');</script>
+<!-- End Google Tag Manager -->
+<div style="display:none;">
+
+<!--Google Analytics-->
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55123557-1', 'auto');
+
+    function removeToCart(id, name, category, brand, variant, price, quantity) {
+        ga('ec:addProduct', {
+            'id':id,
+            'name':name,
+            'category':category,
+            'brand':brand,
+            'variant':variant,
+            'price':price,
+            'quantity':quantity
+        });
+        ga('ec:setAction', 'remove');
+        ga('send', 'event', 'UX', 'click', 'add to cart');     // Send data using an event.
+    }
+
+    ga('send', 'pageview');
+</script>
+
+<script type="application/javascript">
+    (function (w, d, t, r, u) { w[u] = w[u] || []; w[u].push({ 'projectId': '10000', 'properties': { 'pixelId': '10047667' } }); var s = d.createElement(t); s.src = r; s.async = true; s.onload = s.onreadystatechange = function () { var y, rs = this.readyState, c = w[u]; if (rs && rs != "complete" && rs != "loaded") { return } try { y = YAHOO.ywa.I13N.fireBeacon; w[u] = []; w[u].push = function (p) { y([p]) }; y(c) } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr) })(window, document, "script", "https://s.yimg.com/wi/ytc.js", "dotq");
+
+
+</script><!-- Facebook Pixel Code-新地J -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1682367338680139');
+fbq('track', 'PageView');
+fbq('track', 'AddToCart', {  content_name: 'Shopping Cart',  content_ids: ['1821187', '18015005'],  content_type: 'product',  value: 489,  currency: 'TWD'});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1682367338680139&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Facebook Pixel Code-新地 -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '930339447037730');
+fbq('track', "PageView");
+
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=930339447037730&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Criteo OneTag -->
+
+    <script type="text/javascript" src="http://static.criteo.net/js/ld/ld.js" async="true"></script>
+    <script type="text/javascript">
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push(	
+                { event: "setAccount", account: [32567, 40956] },
+                { event: "setHashedEmail", email: "" },
+                { event: "setSiteType", type: "d" },
+                { event: "viewBasket", item: [ 
+{ id: "1821187", price: 390, quantity: 1 }, { id: "18015005", price: 99, quantity: 1 }
+        ]});
+    </script>
+
+
+
+<!-- End Criteo OneTag -->
+<!-- tagtoo Tag -->
+<script type="text/javascript">
+    var tagtoo_advertiser_id = 654;
+    var tagtoo_ga = document.createElement('script');
+    tagtoo_ga.type = 'text/javascript';
+    tagtoo_ga.async = true;
+    tagtoo_ga.src = '//ad.tagtoo.co/media/ad/track.js';
+    var tagtoo_s = document.getElementsByTagName('script')[0];
+    tagtoo_s.parentNode.insertBefore(tagtoo_ga, tagtoo_s);
+</script>
+</div>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>
